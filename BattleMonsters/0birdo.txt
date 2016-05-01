@@ -1,0 +1,12 @@
+{
+    "Name": "birdo",
+	"Id": 1,
+    "Type": 0,
+    "Stats": [
+        "Attack:4",
+        "Defense:2",
+        "Speed:5",
+		"HP:10",
+    ]
+	
+}

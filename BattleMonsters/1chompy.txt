@@ -1,0 +1,12 @@
+{
+    "Name": "chompy",
+	"Id": 2,
+    "Type": 1,
+    "Stats": [
+        "Attack:3",
+        "Defense:5",
+        "Speed:6",
+		"HP:15",
+    ]
+	
+}

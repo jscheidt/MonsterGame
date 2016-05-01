@@ -22,5 +22,7 @@ public class MonsterType {
 		System.out.println("Type:");
 		System.out.println("  Id: " + this.type);
 		System.out.println("  Name: " + this.name);
+		
+		System.out.println("added new line for testing");
 	}
 }
