@@ -1,7 +1,5 @@
 package monsters;
 
-import java.util.ArrayList;
-
 public class MainMonster {
 
 

@@ -2,8 +2,9 @@ package monsters;
 
 public class MonsterMoveSet {
 
-	//stores which moves and what types each move is for a certain Monster
-//	protected String
+	//stores a list of move thats the monster has
+	//also tracks number of moves remaining
+	
 	public MonsterMoveSet(){
 		
 	}

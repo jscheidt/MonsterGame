@@ -5,13 +5,14 @@ import java.util.Iterator;
 public class MonsterStats {
 	
 	//each monster has attack, defense, and speed; stored as integer values
-	protected int attack, defense, speed, hp;
+	protected int attack, defense, speed, hp, level;
 	
 	public MonsterStats(){
 		this.attack = -1;
 		this.defense = -1;
 		this.speed = -1;
 		this.hp = -1;
+		this.level = -1;
 	}
 	
 	public MonsterStats(Iterator<String> iterator){
@@ -31,6 +32,9 @@ public class MonsterStats {
 			else if (name.equals("HP")){
 				this.hp = val;
 			}
+			else if (name.equals("Level")){
+				this.level = val;
+			}
 		}
 	}
 	
@@ -40,6 +44,7 @@ public class MonsterStats {
 		System.out.println("  Defense: " + defense);
 		System.out.println("  Speed: " + speed);
 		System.out.println("  HP: " + hp);
+		System.out.println("  Level: " + level);
 	}
 
 }
