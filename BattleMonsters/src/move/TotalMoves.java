@@ -31,7 +31,7 @@ public class TotalMoves {
 		     while (i.hasNext()){
 		    	 JSONObject move = (JSONObject) i.next();
 		    	 Move m = new Move(move);
-		    	 m.printMoveDetails();
+//		    	 m.printMoveDetails();
 		    	 moveList.add(m);
 		     }
 
