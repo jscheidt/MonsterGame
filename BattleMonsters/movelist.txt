@@ -1,0 +1,14 @@
+{
+"moves":[
+			{ "id": "001", "name":"Move01", "damage":"30", "accuracy":"100", "numOfMoves":"20", "type":"0"}
+			{ "id": "002", "name":"Move02", "damage":"30", "accuracy":"100", "numOfMoves":"20", "type":"1"}
+			{ "id": "003", "name":"Move03", "damage":"70", "accuracy":"80", "numOfMoves":"20", "type":"2"}
+			{ "id": "004", "name":"Move04", "damage":"35", "accuracy":"100", "numOfMoves":"20", "type":"3"}
+			{ "id": "005", "name":"Move05", "damage":"40", "accuracy":"95", "numOfMoves":"20", "type":"0"}
+			{ "id": "006", "name":"Move06", "damage":"25", "accuracy":"100", "numOfMoves":"40", "type":"0"}
+			{ "id": "007", "name":"Move07", "damage":"30", "accuracy":"100", "numOfMoves":"20", "type":"0"}
+			{ "id": "008", "name":"Move08", "damage":"30", "accuracy":"100", "numOfMoves":"20", "type":"0"}
+		
+		]
+		
+}

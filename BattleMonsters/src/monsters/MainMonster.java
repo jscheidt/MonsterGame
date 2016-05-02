@@ -1,8 +1,15 @@
 package monsters;
 
+import java.util.ArrayList;
+
 public class MainMonster {
 
+
 	public static void main (String[] args){
+		
+		
+		moves.TotalMoves tm = new moves.TotalMoves("movelist.txt");
+		
 		Monster m1= new Monster("0birdo.txt");
 		m1.printAllInfo();
 		
