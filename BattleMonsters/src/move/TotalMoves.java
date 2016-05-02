@@ -1,4 +1,4 @@
-package moves;
+package move;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;

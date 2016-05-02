@@ -1,4 +1,4 @@
-package moves;
+package move;
 
 import org.json.simple.JSONObject;
 
@@ -6,22 +6,33 @@ public class Move {
 
 	protected String name;
 	protected int id;
-	protected int damage, accuracy, numOfMoves, type;
+	protected int damage, accuracy, numOfMovesTotal, numOfMovesLeft, type;
 
 	public Move() {
 		this.name = "None";
 		this.id = -1;
 		this.damage = -1;
 		this.accuracy = -1;
-		this.numOfMoves = -1;
+		this.numOfMovesTotal = -1;
+		this.numOfMovesLeft = this.numOfMovesTotal;
 		this.type = -1;
+	}
+	public Move(Move other){
+		this.name = other.name;
+		this.id = other.id;
+		this.damage = other.damage;
+		this.accuracy = other.accuracy;
+		this.numOfMovesTotal = other.numOfMovesTotal;
+		this.numOfMovesLeft = other.numOfMovesLeft;
+		this.type = other.type;
 	}
 
 	public Move(JSONObject move) {
 		this.id = Integer.parseInt((String) move.get("id"));
 		this.accuracy = Integer.parseInt((String) move.get("accuracy"));
 		this.damage = Integer.parseInt((String) move.get("damage"));
-		this.numOfMoves = Integer.parseInt((String) move.get("numOfMoves"));
+		this.numOfMovesTotal = Integer.parseInt((String) move.get("numOfMoves"));
+		this.numOfMovesLeft = this.numOfMovesTotal;
 		this.type = Integer.parseInt((String) move.get("type"));
 		this.name = (String) move.get("name");
 	}
@@ -41,6 +52,6 @@ public class Move {
 		System.out.println("  Type: " + this.type);
 		System.out.println("  Damage: " + this.damage);
 		System.out.println("  Accuracy: " + this.accuracy);
-		System.out.println("  Number of Moves: " + this.numOfMoves);
+		System.out.println("  Number of Moves: " + this.numOfMovesLeft + "/" + this.numOfMovesTotal);
 	}
 }

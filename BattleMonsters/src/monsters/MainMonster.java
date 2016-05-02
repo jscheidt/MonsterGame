@@ -6,7 +6,7 @@ public class MainMonster {
 	public static void main (String[] args){
 		
 		
-		moves.TotalMoves tm = new moves.TotalMoves("movelist.txt");
+		move.TotalMoves tm = new move.TotalMoves("movelist.txt");
 		
 		Monster m1= new Monster("0birdo.txt");
 		m1.printAllInfo();
